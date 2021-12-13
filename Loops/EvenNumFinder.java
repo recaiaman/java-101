@@ -8,9 +8,9 @@ public class EvenNumFinder{
            System.out.print("Bir sayi giriniz:");
            N = inp.nextInt();
            i=0;
-           System.out.print(N+"'ye kadar olan çift sayilar: ");
+           System.out.print(N+"'ye kadar olan 3 ve 4 e tam bölünen sayilar: ");
            while(i<N){
-               if(i%2==0)
+               if(i%3==0 && i%4==0)
                 System.out.print(i+" ");
             i++;
            }
