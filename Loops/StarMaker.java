@@ -7,22 +7,19 @@ public class StarMaker{
         int  uzunluk = scanner.nextInt();
 
          for (int satir = 0; satir < uzunluk; satir++) {
-		System.out.print(" ");// hangi satırda olduğumuzu belirtmek için kullandık
-                
-                //Önce uzunluktan  bulunduğumuz satırı çıkarıp okadar bosluk sütunu ekliyoruz
+		System.out.print(" ");
                 for (int sutun = uzunluk; sutun > satir; sutun--) {
                     System.out.print(" ");
 		}
-                //Sonra satir sayısı kadar yıldızla sutun çiziyoruz 
+                 
 		for (int sutun = 0; sutun <= satir; sutun++) {
                     System.out.print("*");
 		}
-                // Bu for bloguna kadar üçgenin sol tarafını çiziyoruz bundan sonra sağ tarafını
-                //satir sayısı kadar yıldızla sütun ekliyoruz
+                
 		for (int sutun = 0; sutun < satir; sutun++) {
                     System.out.print("*");
 		}
-		System.out.print("\n");//her sütundan sonra alt satıra geçiriyoruz
+		System.out.print("\n");
        
 	}
           for (int satir = 0; satir < uzunluk; satir++) {
